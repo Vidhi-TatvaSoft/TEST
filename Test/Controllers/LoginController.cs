@@ -21,7 +21,8 @@ public class LoginController : Controller
 
     public IActionResult LoginPage()
     {
-        if(Request.Cookies["Remember"] != null){
+        if (Request.Cookies["Remember"] != null)
+        {
             return RedirectToAction("Index", "Home");
         }
         return View();
@@ -30,45 +31,52 @@ public class LoginController : Controller
     [HttpPost]
     public IActionResult LoginPage(LoginViwModel loginViwModel)
     {
-        try{
-        CookieOptions options = new CookieOptions();
-        options.Expires = DateTime.Now.AddDays(10);
-        if (loginViwModel.Email == null || loginViwModel.Password == null)
-        {
-            ViewData["LoginMessage"] = "Enter Valid Credentials";
-            return View();
-        }
-        else
-        {
-            string token = _loginService.VerifyPassword(loginViwModel);
-            if (token != null)
-            {
-                if (loginViwModel.RememberMe)
-                {
-                    Response.Cookies.Append("Remember", loginViwModel.Email);
-                }
-                Response.Cookies.Append("AuthToken", token, options);
-                return RedirectToAction("Index", "Home");
-            }
-            else
+        // try
+        // {
+            CookieOptions options = new CookieOptions();
+            options.Expires = DateTime.Now.AddDays(10);
+            if (loginViwModel.Email == null || loginViwModel.Password == null)
             {
                 ViewData["LoginMessage"] = "Enter Valid Credentials";
                 return View();
             }
-        }
-        }catch(Exception e){
-            return View();
-        }
+            else
+            {
+                string token = _loginService.VerifyPassword(loginViwModel);
+                if (token != null)
+                {
+                    if (loginViwModel.RememberMe)
+                    {
+                        Response.Cookies.Append("Remember", loginViwModel.Email);
+                    }
+                    Response.Cookies.Append("AuthToken", token, options);
+                    return RedirectToAction("Index", "Home");
+                }
+                else
+                {
+                    ViewData["LoginMessage"] = "Enter Valid Credentials";
+                    return View();
+                }
+            }
+        // }
+        // catch (Exception e)
+        // {
+        //     return View();
+        // }
     }
 
-    public IActionResult Logout(){
-        try{
-         Response.Cookies.Delete("AuthToken");
-        Response.Cookies.Delete("Remember");
-        return RedirectToAction("LoginPage");
-        }catch(Exception e){
+    public IActionResult Logout()
+    {
+        // try
+        // {
+            Response.Cookies.Delete("AuthToken");
+            Response.Cookies.Delete("Remember");
             return RedirectToAction("LoginPage");
-        }
+        // }
+        // catch (Exception e)
+        // {
+        //     return RedirectToAction("LoginPage");
+        // }
     }
 
 

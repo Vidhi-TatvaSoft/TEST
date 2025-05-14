@@ -6,9 +6,10 @@ namespace DAL.Models;
 public class Users
 {
     [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public long UserId { get; set; }
-    public string Name { get; set; }
-    public string Email { get; set; }
+    public string Name { get; set; } = null!;
+    public string Email { get; set; } = null!;
 
     public string password {get ; set; } = null!;
 
@@ -16,5 +17,5 @@ public class Users
 
     [ForeignKey("Roles")]
     public long RoleId { get ; set ; }
-    public Roles Roles {get ; set;}
+    public Roles Roles {get ; set;} 
 }

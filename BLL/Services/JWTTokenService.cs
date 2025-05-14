@@ -14,7 +14,7 @@ public class JWTTokenService : IJWTTokenService
 
     public JWTTokenService(IConfiguration configuration)
     {
-        _secretKey = configuration.GetValue<string>("JwtConfig:Key");
+        _secretKey = configuration.GetValue<string>("JwtConfig:Key")!;
         _tokenDuration = configuration.GetValue<int>("JwtConfig:Duration");
     }
 
