@@ -8,7 +8,11 @@ html {
   }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
@@ -17,10 +21,27 @@ html {
   min-height: 100%;
 }
 
-.text-primary{
+.text-primary {
   color: rgb(1, 122, 158) !important;
 }
 
-.bg-primary{
+.bg-primary {
   background-color: rgb(1, 122, 158) !important;
+}
+
+.password-div {
+  position: relative;
+
+}
+
+.inputText-login {
+  z-index: 0 !important;
+}
+
+.password-icon-login {
+
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  z-index: 1 !important;
 }

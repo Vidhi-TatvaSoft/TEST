@@ -15,9 +15,11 @@
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
 
-            <div class="password-div mt-4">
-                <input type="password" asp-for="Password" class="inputText-login  form-control" id="password"
+            <div class="password-div mt-4 position-relative">
+                <input type="password" asp-for="Password" class="inputText-login d-inline  form-control" id="password"
                     placeholder="Password*" />
+                <span><i class="bi bi-eye-slash-fill password-icon-login" id="togglepassword"
+                        onclick="toggle_fnction('togglepassword','password')"></i></span>
                 <span asp-validation-for="Password" class="text-danger"></span>
             </div>
 
@@ -41,6 +43,4 @@
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
-} 
-
-
+}
