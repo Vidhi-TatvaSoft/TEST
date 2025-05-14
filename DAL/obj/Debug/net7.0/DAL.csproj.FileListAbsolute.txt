@@ -1,0 +1,14 @@
+D:\TEST\DAL\bin\Debug\net7.0\DAL.deps.json
+D:\TEST\DAL\bin\Debug\net7.0\DAL.runtimeconfig.json
+D:\TEST\DAL\bin\Debug\net7.0\DAL.dll
+D:\TEST\DAL\bin\Debug\net7.0\DAL.pdb
+D:\TEST\DAL\obj\Debug\net7.0\DAL.csproj.AssemblyReference.cache
+D:\TEST\DAL\obj\Debug\net7.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\TEST\DAL\obj\Debug\net7.0\DAL.AssemblyInfoInputs.cache
+D:\TEST\DAL\obj\Debug\net7.0\DAL.AssemblyInfo.cs
+D:\TEST\DAL\obj\Debug\net7.0\DAL.csproj.CoreCompileInputs.cache
+D:\TEST\DAL\obj\Debug\net7.0\DAL.dll
+D:\TEST\DAL\obj\Debug\net7.0\refint\DAL.dll
+D:\TEST\DAL\obj\Debug\net7.0\DAL.pdb
+D:\TEST\DAL\obj\Debug\net7.0\DAL.genruntimeconfig.cache
+D:\TEST\DAL\obj\Debug\net7.0\ref\DAL.dll

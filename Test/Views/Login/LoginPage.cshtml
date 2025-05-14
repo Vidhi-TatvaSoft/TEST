@@ -1,0 +1,23 @@
+@using DAL.ViewModels;
+@model LoginViwModel;
+
+<div class="row">
+    <div class="fs-2 fw-bold text-primary mb-3">login page</div>
+    <form asp-action="VerifyPassword" asp-controller="Login">
+        <div class="username-div mt-2 form-group">
+            <input asp-for="Email" id="email" type="email" class="d-inline form-control " placeholder="Email*" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="password-div mt-2 ">
+            <input type="password" asp-for="Password" class="inputText-login d-inline form-control  w-100 p-2  "
+                id="password" placeholder="Password*" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+
+        <div>
+            <input type="submit" value="Login"
+                class="btn btn-danger login-btn-btn bg-primary border-primary w-100 mt-2">
+        </div>
+    </form>
+</div>
