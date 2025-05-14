@@ -1,5 +1,6 @@
 using BLL.Interfaces;
 using DAL.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Test.Controllers;
@@ -13,27 +14,62 @@ public class LoginController : Controller
         _loginService = loginService;
     }
 
+    // public IActionResult LoginPage()
+    // {
+    //     return View();
+    // }
+
     public IActionResult LoginPage()
     {
+        if(Request.Cookies["Remember"] != null){
+            return RedirectToAction("Index", "Home");
+        }
         return View();
     }
 
-    public IActionResult VerifyPassword(LoginViwModel loginViwModel)
+    [HttpPost]
+    public IActionResult LoginPage(LoginViwModel loginViwModel)
     {
+        try{
+        CookieOptions options = new CookieOptions();
+        options.Expires = DateTime.Now.AddDays(10);
         if (loginViwModel.Email == null || loginViwModel.Password == null)
         {
-            return View("LoginPage");
+            ViewData["LoginMessage"] = "Enter Valid Credentials";
+            return View();
         }
         else
         {
-            if (_loginService.VerifyPassword(loginViwModel))
+            string token = _loginService.VerifyPassword(loginViwModel);
+            if (token != null)
             {
+                if (loginViwModel.RememberMe)
+                {
+                    Response.Cookies.Append("Remember", loginViwModel.Email);
+                }
+                Response.Cookies.Append("AuthToken", token, options);
                 return RedirectToAction("Index", "Home");
             }
             else
             {
-                return View("LoginPage");
+                ViewData["LoginMessage"] = "Enter Valid Credentials";
+                return View();
             }
         }
+        }catch(Exception e){
+            return View();
+        }
     }
+
+    public IActionResult Logout(){
+        try{
+         Response.Cookies.Delete("AuthToken");
+        Response.Cookies.Delete("Remember");
+        return RedirectToAction("LoginPage");
+        }catch(Exception e){
+            return RedirectToAction("LoginPage");
+        }
+    }
+
+
 }

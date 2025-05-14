@@ -17,6 +17,10 @@ html {
   min-height: 100%;
 }
 
-body {
-  margin-bottom: 60px;
+.text-primary{
+  color: rgb(1, 122, 158) !important;
+}
+
+.bg-primary{
+  background-color: rgb(1, 122, 158) !important;
 }

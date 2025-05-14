@@ -1,23 +1,43 @@
 @using DAL.ViewModels;
 @model LoginViwModel;
 
-<div class="row">
-    <div class="fs-2 fw-bold text-primary mb-3">login page</div>
-    <form asp-action="VerifyPassword" asp-controller="Login">
-        <div class="username-div mt-2 form-group">
-            <input asp-for="Email" id="email" type="email" class="d-inline form-control " placeholder="Email*" />
-            <span asp-validation-for="Email" class="text-danger"></span>
-        </div>
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+<div class="p-3 d-flex  align-items-center justify-content-center border" style="box-shadow: 1px 1px 15px 3px #888888;">
+    <div class="row">
+        <div class="fs-2 fw-bold text-primary mb-3">Login Page</div>
+        <form asp-action="LoginPage" asp-controller="Login">
+            <div class="username-div mt-2 ">
+                <input asp-for="Email" id="email" type="email" class=" form-control " placeholder="Email*" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
 
-        <div class="password-div mt-2 ">
-            <input type="password" asp-for="Password" class="inputText-login d-inline form-control  w-100 p-2  "
-                id="password" placeholder="Password*" />
-            <span asp-validation-for="Password" class="text-danger"></span>
-        </div>
+            <div class="password-div mt-4">
+                <input type="password" asp-for="Password" class="inputText-login  form-control" id="password"
+                    placeholder="Password*" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
 
-        <div>
-            <input type="submit" value="Login"
-                class="btn btn-danger login-btn-btn bg-primary border-primary w-100 mt-2">
-        </div>
-    </form>
+            <div class="form-check mt-2">
+                <input class="form-check-input text-primary" asp-for="RememberMe" type="checkbox" id="flexCheckDefault">
+                <label class="form-check-label fs-6" for="flexCheckDefault">
+                    Remember Me
+                </label>
+            </div>
+
+            <div class="text-danger fs-5">@ViewData["LoginMessage"]</div>
+            <div class="mt-5 w-100">
+                <input type="submit" value="Login"
+                    class="btn btn-danger login-btn-btn bg-primary border-primary form-control">
+
+            </div>
+        </form>
+    </div>
 </div>
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
