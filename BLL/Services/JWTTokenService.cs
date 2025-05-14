@@ -57,4 +57,9 @@ public class JWTTokenService : IJWTTokenService
         return value;
     }
 
+    // public bool isAuthValid(string token){
+    //     if(token == null) return false;
+    //     return true;
+    // }
+
 }

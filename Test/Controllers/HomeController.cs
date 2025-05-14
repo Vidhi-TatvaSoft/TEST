@@ -16,6 +16,9 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        if(Request.Cookies["AuthToken"] == null){
+            return RedirectToAction("LoginPage","Login");
+        }
         return View();
     }
 
@@ -34,4 +37,6 @@ public class HomeController : Controller
     public IActionResult Dashboard(){
         return View();
     }
+
+
 }
