@@ -5,6 +5,7 @@
     ViewData["Title"] = "Login";
     Layout = "~/Views/Shared/_LoginLayout.cshtml";
 }
+
 <div class="p-3 d-flex  align-items-center justify-content-center border" style="box-shadow: 1px 1px 15px 3px #888888;">
     <div class="row">
         <div class="fs-2 fw-bold text-primary mb-3">Login Page</div>
@@ -28,7 +29,7 @@
             </div>
 
             <div class="text-danger fs-5">@ViewData["LoginMessage"]</div>
-            <div class="mt-5 w-100">
+            <div class="mt-4 w-100">
                 <input type="submit" value="Login"
                     class="btn btn-danger login-btn-btn bg-primary border-primary form-control">
 
@@ -40,4 +41,6 @@
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
-}
+} 
+
+
