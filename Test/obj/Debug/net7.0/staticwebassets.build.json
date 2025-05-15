@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "R9RUlsFovKgEL4lfztkcg8RqYMByAu+fJu0aDm/l8js=",
+  "Hash": "0epd2RUCpON0uAvNm2va3fXcxF7uLcYM1NuqDGyDOM4=",
   "Source": "Test",
   "BasePath": "_content/Test",
   "Mode": "Default",
@@ -1171,6 +1171,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\6d5d31c5-a7cc-4c3d-a5e7-39edbbc10e65_OrderInvoice (13).pdf"
+    },
+    {
+      "Identity": "D:\\TEST\\Test\\wwwroot\\uploads\\959fc3ba-b4a5-433e-a8dc-521c18085ad2_OrderInvoice (14).pdf",
+      "SourceId": "Test",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\TEST\\Test\\wwwroot\\",
+      "BasePath": "_content/Test",
+      "RelativePath": "uploads/959fc3ba-b4a5-433e-a8dc-521c18085ad2_OrderInvoice (14).pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\959fc3ba-b4a5-433e-a8dc-521c18085ad2_OrderInvoice (14).pdf"
     },
     {
       "Identity": "D:\\TEST\\Test\\wwwroot\\uploads\\a186c3f4-9f19-4166-93cc-bcd3dfaf4020_OrderInvoice (13).pdf",

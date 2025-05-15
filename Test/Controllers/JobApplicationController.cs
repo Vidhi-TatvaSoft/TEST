@@ -248,8 +248,8 @@ public class JobApplicationController : Controller
         }
         else
         {
-            bool jobApplicationDeleteStatus = await _JobApplicationService.DeleteJobApplication(AppId);
             int jobId = _JobApplicationService.getJobIdByAppId(AppId);
+            bool jobApplicationDeleteStatus = await _JobApplicationService.DeleteJobApplication(AppId);
             if (jobApplicationDeleteStatus)
             {
                 TempData["SuccessmMessage"] = "Job Application deleted successfully";
