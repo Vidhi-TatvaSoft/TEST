@@ -46,7 +46,7 @@ public class HomeService : IHomeService
         }
         catch (Exception e)
         {
-            return null!;
+            return new List<JobViewModel>();
         }
     }
     
@@ -101,12 +101,12 @@ public class HomeService : IHomeService
             }
             else
             {
-                return null!;
+                return new JobViewModel();
             }
         }
         catch (Exception e)
         {
-            return null!;
+            return new JobViewModel ();
         }
     }
     #endregion

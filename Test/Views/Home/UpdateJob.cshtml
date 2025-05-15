@@ -45,17 +45,17 @@
                 <label for="floatingSelect text-secondary ">status</label>
                 <select asp-for="status" class="form-select" id="status" aria-label=" label select example">
                     <option value="Available">Available</option>
-                    @* <option value="Interviewing">Interviewing</option> *@
                     <option value="Offered">Offered</option>
-                    @* <option value="Rejected">Rejected</option> *@
                 </select>
             </div>
 
-            @* <div class="text-danger fs-5">@ViewData["RegisterMessage"]</div> *@
             <div class="mt-4 w-100">
                 <input type="submit" value="Update Job "
                     class="btn btn-danger login-btn-btn bg-primary border-primary form-control">
 
+            </div>
+            <div class="mt-4 w-100">
+                <a asp-action="Index" class="btn btn-danger login-btn-btn bg-primary border-primary form-control">Back</a>
             </div>
         </form>
     </div>

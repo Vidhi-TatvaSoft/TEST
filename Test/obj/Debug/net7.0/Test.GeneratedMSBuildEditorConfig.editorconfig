@@ -64,12 +64,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9iQXBwbGljYXRpb25cSm9iQXBwbHkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TEST/Test/Views/JobApplication/UopdateJobApplicationForJobId.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9iQXBwbGljYXRpb25cVW9wZGF0ZUpvYkFwcGxpY2F0aW9uRm9ySm9iSWQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/TEST/Test/Views/JobApplication/UpdateJobApplication.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9iQXBwbGljYXRpb25cVXBkYXRlSm9iQXBwbGljYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TEST/Test/Views/JobApplication/UpdateJobApplicationForJob.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9iQXBwbGljYXRpb25cVXBkYXRlSm9iQXBwbGljYXRpb25Gb3JKb2IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/TEST/Test/Views/Login/LoginPage.cshtml]

@@ -24,7 +24,7 @@ public class JobApplicationService : IJobApplicationService
         {
             if (JobId == 0)
             {
-                return null!;
+                return new List<JobApplicationViewModel>();
             }
             var jobApplications = _context.JobApplications.Include(x => x.Jobs).Where(j => j.JobId == JobId && !j.IsDelete).ToList();
             if (jobApplications != null)
@@ -37,17 +37,19 @@ public class JobApplicationService : IJobApplicationService
                     status = j.status,
                     Resume = j.Resume == null ? null : j.Resume,
                     UserId = j.UserId,
+                    CompanyName = j.Jobs.CompanyName,
+                    Location  = j.Jobs.Location,
                     UserName = _context.Users.FirstOrDefault(u => u.UserId == j.UserId).Name
                 }).ToList();
             }
             else
             {
-                return null!;
+                return new List<JobApplicationViewModel>();
             }
         }
         catch (Exception e)
         {
-            return null!;
+            return new List<JobApplicationViewModel>();
         }
 
     }
@@ -115,12 +117,12 @@ public class JobApplicationService : IJobApplicationService
             }
             else
             {
-                return null!;
+                return new List<JobApplicationViewModel>();
             }
         }
         catch (Exception e)
         {
-            return null!;
+            return new List<JobApplicationViewModel>();
         }
     }
     #endregion
@@ -147,7 +149,7 @@ public class JobApplicationService : IJobApplicationService
         }
         catch (Exception e)
         {
-            return null!;
+            return new JobApplicationViewModel();
         }
     }
     #endregion

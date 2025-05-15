@@ -208,7 +208,7 @@ public class JobApplicationController : Controller
         if (jobApplication == null)
         {
             TempData["ErrorMessage"] = "Something Went Wrong";
-            return RedirectToAction("GetJobApplicationList", new { JobId = jobApplication.JobId });
+            return RedirectToAction("GetJobApplicationsByJobId", new { JobId = jobApplication.JobId });
         }
         return View(jobApplication);
     }
@@ -228,12 +228,12 @@ public class JobApplicationController : Controller
         if (updateJobApplication == false)
         {
             TempData["ErrorMessage"] = "Something Went Wrong";
-            return RedirectToAction("GetJobApplicationListByJobId", new { JobId = jobApplicationViewModel.JobId });
+            return RedirectToAction("GetJobApplicationsByJobId", new { JobId = jobApplicationViewModel.JobId });
         }
         else
         {
             TempData["SuccessMessage"] = "Job Application Updated Successfully";
-            return RedirectToAction("GetJobApplicationListByJobId", new { JobId = jobApplicationViewModel.JobId });
+            return RedirectToAction("GetJobApplicationsByJobId", new { JobId = jobApplicationViewModel.JobId });
         }
     }
     #endregion
@@ -244,21 +244,21 @@ public class JobApplicationController : Controller
         if (AppId == 0)
         {
             TempData["ErrorMessage"] = "Something Went wrong";
-            return RedirectToAction("GetJobApplicationList");
+            return RedirectToAction("Index","Home");
         }
         else
         {
-            int jobId = _JobApplicationService.getJobIdByAppId(AppId);
             bool jobApplicationDeleteStatus = await _JobApplicationService.DeleteJobApplication(AppId);
+            int jobId = _JobApplicationService.getJobIdByAppId(AppId);
             if (jobApplicationDeleteStatus)
             {
                 TempData["SuccessmMessage"] = "Job Application deleted successfully";
-                return RedirectToAction("GetJobApplicationListByJobId" , new { JobId = jobId } );
+                return RedirectToAction("GetJobApplicationsByJobId" , new { JobId = jobId } );
             }
             else
             {
                 TempData["ErrorMessage"] = "Something went wrong";
-                return RedirectToAction("GetJobApplicationListByJobId" , new { JobId = jobId });
+                return RedirectToAction("GetJobApplicationsByJobId" , new { JobId = jobId });
             }
         }
     }
