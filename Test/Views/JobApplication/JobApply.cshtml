@@ -1,0 +1,54 @@
+@using DAL.ViewModels;
+@model JobApplicationViewModel;
+
+
+@{
+    ViewData["Title"] = "Apply For Job";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="d-flex justify-content-center">
+    <div class=" row">
+        <div class="fs-3 text-dark fw-bold">Apply for Job</div>
+
+        <form asp-action="JobApply" asp-controller="JobApplication" enctype="multipart/form-data" class=" row">
+            <div class=" mt-2 ">
+                <input type="hidden" value="@ViewBag.JobId" asp-for="JobId"  id="jobid">
+                <input type="hidden" value="@ViewBag.UserId" asp-for="UserId"  id="userId">
+                <label for="JobName">Job Name*</label>
+                <input asp-for="JobName" id="JobName" type="text" class=" form-control " placeholder="Job Name*"  disabled/>
+                <span asp-validation-for="JobName" class="text-danger"></span>
+            </div>
+           
+            <div class="col-12 mt-3 d-flex justify-content-center align-content-center ">
+                <div class="d-flex justify-content-center align-items-center  text-secondary browse-file-div bg-white"
+                    style="height: 90px; width: 100%;  ">
+                    <input type="file" asp-for="ResumePdf" class=" d-none " id="choose-file" />
+                    <label for="choose-file">
+                        <i class="fa-solid fa-cloud-arrow-up ms-1 d-flex justify-content-center"></i>
+                        <span id="browseFileText">Browse files</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="text-danger fs-5">@ViewData["ApplyMessage"]</div>
+            <div class="mt-4 w-100">
+                <input type="submit" value="Apply "
+                    class="btn btn-danger login-btn-btn bg-primary border-primary form-control">
+
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $("#choose-file").change(function () {
+            const file = this.files[0];
+            $("#browseFileText").text(file.name);
+        });
+    </script>
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

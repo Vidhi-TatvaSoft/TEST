@@ -245,6 +245,10 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "D:\\TEST\\Test\\wwwroot\\uploads\\c2158c70-2d2c-4ef4-8471-6db49aad804d_OrderInvoice (15).pdf",
+      "PackagePath": "staticwebassets\\uploads\\c2158c70-2d2c-4ef4-8471-6db49aad804d_OrderInvoice (15).pdf"
+    },
+    {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Test.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

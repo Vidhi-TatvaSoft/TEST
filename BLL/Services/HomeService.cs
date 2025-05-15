@@ -16,22 +16,22 @@ public class HomeService : IHomeService
 
     }
 
-    public List<JobViewModel> GetAllJobs(string role)
+    public List<JobViewModel> GetAllJobs(string role, long userId)
     {
         try
         {
             if(role == "User"){
-                List<long> userids = _context.JobApplications.Where(x => !x.IsDelete && x.UserId==userId).Select(x => x.UserId).ToList();
-
-                return _context.Jobs.Include(x => x.JobApplications).Where(j => !j.IsDelete && j.Status == "Available")
+                List<int> jobids = _context.JobApplications.Where(x => !x.IsDelete && x.UserId==userId).Select(x => x.JobId).ToList();
+                var jobs = _context.Jobs.Include(x => x.JobApplications).Where(j => !j.IsDelete  && (!jobids.Contains(j.JobId) || jobids.Contains(j.JobId)))
                 .Select(j => new JobViewModel{
                     JobId = j.JobId,
                     JobName = j.JobName,
                     CompanyName = j.CompanyName,
                     Location = j.Location,
                     NoOfAplicants = j.JobApplications.Where(ja => ja.JobId == j.JobId).Count(),
-                    status = j.Status
+                    status = jobids.Contains(j.JobId) ? "Applied" : "Available"
                 }).OrderBy(x => x.JobId).ToList();
+                return jobs;
             }else{
                 return  _context.Jobs.Include(x => x.JobApplications).Where(j => !j.IsDelete)
             .Select(j => new JobViewModel{
@@ -166,6 +166,23 @@ public class HomeService : IHomeService
     #endregion
 
     #region GetUserIdFromEmail
-    
+    public long GetUserIdFromEmail(string email){
+        try
+        {
+            var user = _context.Users.FirstOrDefault(u => u.Email == email );
+            if (user != null)
+            {
+                return user.UserId;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+        catch (Exception e)
+        {
+            return 0;
+        }
+    }
     #endregion
 }

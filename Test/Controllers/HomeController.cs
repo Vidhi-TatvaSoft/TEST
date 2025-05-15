@@ -37,7 +37,7 @@ public class HomeController : Controller
         var email = _jwttokenService.GetClaimValue(token, "email");
         var userId = _homeService.GetUserIdFromEmail(email);
 
-        List<JobViewModel> jobList = _homeService.GetAllJobs(role);
+        List<JobViewModel> jobList = _homeService.GetAllJobs(role,userId);
         return View(jobList);
     }
 

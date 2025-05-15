@@ -36,11 +36,12 @@
                 <tr>
                     <td>@job.JobId</td>
                     <td><a asp-action="GetJobApplicationsByJobId" asp-controller="JobApplication"
-                            asp-route-JobId="@job.JobId">@job.JobName</a></td>
+                            asp-route-JobId="@job.JobId" style="text-decoration: none;" class="text-dark">@job.JobName </a>
+                    </td>
                     <td>@job.CompanyName</td>
                     <td>@job.Location</td>
-                    <td>@job.status</td>
                     <td>@job.NoOfAplicants</td>
+                    <td>@job.status</td>
                     @if (User.IsInRole("Admin"))
                     {
                         <td>
@@ -53,9 +54,13 @@
                     else
                     {
                         <td>
-                            <a asp-action="UpdateJob" asp-controller="Home" asp-route-id="@job.JobId">Apply</a>
-                            <a asp-action="DeleteJob" asp-controller="Home" asp-route-id="@job.JobId"><i
-                                    class="fa-solid fa-trash-can text-black"></i></a>
+                            @if (job.status == "Available")
+                            {
+                                <a asp-action="JobApply" asp-controller="JobApplication" asp-route-JobId="@job.JobId"
+                                    style="text-decoration: none;" class="text-dark btn border btn-primary">Apply</a>
+                            }else{
+                                <span class="text-dark btn border btn-success"> @job.status</span>
+                            }
                         </td>
 
                     }

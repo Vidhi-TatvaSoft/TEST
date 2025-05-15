@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Http;
+
 namespace DAL.ViewModels;
 
 public class JobApplicationViewModel
@@ -10,6 +12,8 @@ public class JobApplicationViewModel
     public string status { get; set; }
 
     public string Resume { get; set; }
+
+    public IFormFile ResumePdf {get;set;}
 
     public long UserId { get; set; }
     public string UserName {get; set; } = null!;
