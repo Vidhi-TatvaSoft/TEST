@@ -22,13 +22,13 @@ public class HomeService : IHomeService
         {
             if(role == "User"){
                 List<int> jobids = _context.JobApplications.Where(x => !x.IsDelete && x.UserId==userId).Select(x => x.JobId).ToList();
-                var jobs = _context.Jobs.Include(x => x.JobApplications).Where(j => !j.IsDelete  && (!jobids.Contains(j.JobId) || jobids.Contains(j.JobId)))
+                var jobs = _context.Jobs.Include(x => x.JobApplications).Where(j => !j.IsDelete && j.Status == "Available" && (!jobids.Contains(j.JobId) || jobids.Contains(j.JobId)))
                 .Select(j => new JobViewModel{
                     JobId = j.JobId,
                     JobName = j.JobName,
                     CompanyName = j.CompanyName,
                     Location = j.Location,
-                    NoOfAplicants = j.JobApplications.Where(ja => ja.JobId == j.JobId).Count(),
+                    NoOfAplicants = j.JobApplications.Where(ja => ja.JobId == j.JobId && !ja.IsDelete).Count(),
                     status = jobids.Contains(j.JobId) ? "Applied" : "Available"
                 }).OrderBy(x => x.JobId).ToList();
                 return jobs;
@@ -39,7 +39,7 @@ public class HomeService : IHomeService
                 JobName = j.JobName,
                 CompanyName = j.CompanyName,
                 Location = j.Location,
-                NoOfAplicants = j.JobApplications.Where(ja => ja.JobId == j.JobId).Count(),
+                NoOfAplicants = j.JobApplications.Where(ja => ja.JobId == j.JobId && !ja.IsDelete).Count(),
                 status = j.Status
             }).OrderBy(x => x.JobId).ToList();
             }

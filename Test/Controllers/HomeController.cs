@@ -52,16 +52,7 @@ public class HomeController : Controller
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
 
-    [Authorize(Roles = "Admin")]
-    public IActionResult Dashboard()
-    {
-        if (Request.Cookies["AuthToken"] == null)
-        {
-            Response.Cookies.Delete("Remember");
-            return RedirectToAction("LoginPage", "Login");
-        }
-        return View();
-    }
+
 
 #region AddJob get
     [Authorize(Roles = "Admin")]

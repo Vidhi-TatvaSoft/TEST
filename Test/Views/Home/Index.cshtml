@@ -5,46 +5,57 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+    <h1 class="fs-2 fw-bold mt-3">Jobs</h1>
 
 </div>
 
 <div>
-    <a asp-action="Dashboard" asp-controller="Home" class="btn border">Job Applications</a>
+    @if (User.IsInRole("Admin"))
+    {
+        <a asp-action="GetJobApplicationList" asp-controller="JobApplication" class="btn border btn-primary">Job Applications</a>
+    }
     <div class="d-flex justify-content-end">
-        <a asp-action="AddJob" asp-controller="Home" class=" btn border me-2">Add Job</a>
-        <a asp-action="Logout" asp-controller="Login" class=" btn border ">Logout</a>
+        @if (User.IsInRole("Admin"))
+        {
+            <a asp-action="AddJob" asp-controller="Home" class=" btn border me-2 btn-primary">Add Job</a>
+        }
+        <a data-bs-toggle="modal" data-bs-target="#Logout" class=" btn border ">Logout</a>
     </div>
 
 </div>
 
-<div>
+<div class="table-responsive mt-3">
     <table class="table display">
         <thead>
-            <th>JobId</th>
-            <th>Job Name</th>
-            <th>Company</th>
-            <th>Location</th>
-            <th>Number Of Appliactions</th>
-            <th>Status</th>
-            <th>Actions</th>
+            <th class="text-nowrap">JobId</th>
+            <th class="text-nowrap">Job Name</th>
+            <th class="text-nowrap">Company</th>
+            <th class="text-nowrap">Location</th>
+            <th class="text-nowrap">Number Of Appliactions</th>
+            <th class="text-nowrap">Status</th>
+            <th class="text-nowrap">Actions</th>
         </thead>
 
         <tbody>
+            @if(Model.Count == 0 || Model == null){
+                <tr >
+                    <td colspan="7" class="text-center"><div>No Jobs Found </div></td>
+                </tr>
+            }
             @foreach (var job in Model)
             {
-                <tr>
-                    <td>@job.JobId</td>
-                    <td><a asp-action="GetJobApplicationsByJobId" asp-controller="JobApplication"
+                <tr >
+                    <td class="text-nowrap">@job.JobId</td>
+                    <td class="text-nowrap"><a asp-action="GetJobApplicationsByJobId" asp-controller="JobApplication"
                             asp-route-JobId="@job.JobId" style="text-decoration: none;" class="text-dark">@job.JobName </a>
                     </td>
-                    <td>@job.CompanyName</td>
-                    <td>@job.Location</td>
-                    <td>@job.NoOfAplicants</td>
-                    <td>@job.status</td>
+                    <td class="text-nowrap">@job.CompanyName</td>
+                    <td class="text-nowrap">@job.Location</td>
+                    <td class="text-nowrap">@job.NoOfAplicants</td>
+                    <td class="text-nowrap">@job.status</td>
                     @if (User.IsInRole("Admin"))
                     {
-                        <td>
+                        <td class="text-nowrap">
                             <a asp-action="UpdateJob" asp-controller="Home" asp-route-id="@job.JobId"><i
                                     class="fa-solid fa-pen text-black me-3 mt-2"></i></a>
                             <a asp-action="DeleteJob" asp-controller="Home" asp-route-id="@job.JobId"><i
@@ -53,12 +64,14 @@
                     }
                     else
                     {
-                        <td>
+                        <td class="text-nowrap">
                             @if (job.status == "Available")
                             {
                                 <a asp-action="JobApply" asp-controller="JobApplication" asp-route-JobId="@job.JobId"
                                     style="text-decoration: none;" class="text-dark btn border btn-primary">Apply</a>
-                            }else{
+                            }
+                            else
+                            {
                                 <span class="text-dark btn border btn-success"> @job.status</span>
                             }
                         </td>
@@ -70,3 +83,36 @@
         </tbody>
     </table>
 </div>
+
+<div id="Logout" class="modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Logout Conformation</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body ">
+                <div class="delete-cat-image d-flex flex-column  align-items-center">
+                    <img src="images/toppng.com-warning-icon-2400x2400.png" width="50px" alt="">
+                    <p>Are you sure you want to Logout?</p>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <a class="btn btn-primary"  asp-action="Logout" asp-controller="Login">Yes</a>
+                            <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">No</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        @* function DeleteJob(){
+            var JobId = document.getElementById("deletejobId").value;
+            $.ajax({
+
+            })
+        } *@
+    </script>
+    
+}

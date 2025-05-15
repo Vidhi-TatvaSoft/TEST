@@ -66,8 +66,8 @@ public class JobApplicationController : Controller
         }
         if (jobApplicationViewModel.ResumePdf == null)
         {
-            ViewData["ApplyMessage"] = "Please Upload Resume";
-            return View(jobApplicationViewModel);
+            TempData["ErrorMessage"] = "Please Upload Resume";
+            return RedirectToAction("JobApply", new { JobId = jobApplicationViewModel.JobId });
         }
         else
         {
@@ -93,7 +93,7 @@ public class JobApplicationController : Controller
                 bool saveJob = await _JobApplicationService.ApplyJob(jobApplicationViewModel);
                 if (saveJob == false)
                 {
-                    ViewData["ApplyMessage"] = "Somehing went wrong";
+                    TempData["ErrorMessage"] = "Somehing went wrong";
                     return RedirectToAction("JobApply", new { JobId = jobApplicationViewModel.JobId });
                 }
                 else
@@ -104,7 +104,7 @@ public class JobApplicationController : Controller
             }
             else
             {
-                TempData["ErrorMessage"]  = "Please Upload file in PDF formate.";
+                TempData["ErrorMessage"] = "Please Upload file in PDF formate.";
                 return RedirectToAction("JobApply", new { JobId = jobApplicationViewModel.JobId });
             }
 
@@ -112,4 +112,158 @@ public class JobApplicationController : Controller
     }
 
     #endregion
+
+    #region GetAllJobApplications
+    [Authorize(Roles = "Admin")]
+    public IActionResult GetJobApplicationList()
+    {
+        if (Request.Cookies["AuthToken"] == null)
+        {
+            Response.Cookies.Delete("Remember");
+            return RedirectToAction("LoginPage", "Login");
+        }
+        List<JobApplicationViewModel> AllJobApplication = _JobApplicationService.GetAllJobApplications();
+        return View(AllJobApplication);
+    }
+    #endregion
+
+    #region UpdateJobApplication
+    [Authorize(Roles = "Admin")]
+    public IActionResult UpdateJobApplication(int id)
+    {
+        if (Request.Cookies["AuthToken"] == null)
+        {
+            Response.Cookies.Delete("Remember");
+            return RedirectToAction("LoginPage", "Login");
+        }
+        JobApplicationViewModel jobApplication = _JobApplicationService.GetJobDetail(id);
+        if (jobApplication == null)
+        {
+            TempData["ErrorMessage"] = "Something Went Wrong";
+            return RedirectToAction("GetJobApplicationList");
+        }
+        return View(jobApplication);
+    }
+    #endregion
+
+    #region  UpdateJobApplication
+    [Authorize(Roles = "Admin")]
+    [HttpPost]
+    public async Task<IActionResult> UpdateJobApplication(JobApplicationViewModel jobApplicationViewModel)
+    {
+        if (Request.Cookies["AuthToken"] == null)
+        {
+            Response.Cookies.Delete("Remember");
+            return RedirectToAction("LoginPage", "Login");
+        }
+        bool updateJobApplication = await _JobApplicationService.UpdateJobApplication(jobApplicationViewModel);
+        if (updateJobApplication == false)
+        {
+            TempData["ErrorMessage"] = "Something Went Wrong";
+            return RedirectToAction("GetJobApplicationList");
+        }
+        else
+        {
+            TempData["SuccessMessage"] = "Job Application Updated Successfully";
+            return RedirectToAction("GetJobApplicationList");
+        }
+    }
+    #endregion
+
+    #region DeleteJobApplication
+    public async Task<IActionResult> DeleteJobApplication(int AppId)
+    {
+        if (AppId == 0)
+        {
+            TempData["ErrorMessage"] = "Something Went wrong";
+            return RedirectToAction("GetJobApplicationList");
+        }
+        else
+        {
+            bool jobApplicationDeleteStatus = await _JobApplicationService.DeleteJobApplication(AppId);
+            if (jobApplicationDeleteStatus)
+            {
+                TempData["SuccessmMessage"] = "Job Application deleted successfully";
+                return RedirectToAction("GetJobApplicationList");
+            }
+            else
+            {
+                TempData["ErrorMessage"] = "Something went wrong";
+                return RedirectToAction("GetJobApplicationList");
+            }
+        }
+    }
+    #endregion
+ 
+    #region UpdateJobApplication
+    [Authorize(Roles = "Admin")]
+    public IActionResult UpdateJobApplicationForJob(int id)
+    {
+        if (Request.Cookies["AuthToken"] == null)
+        {
+            Response.Cookies.Delete("Remember");
+            return RedirectToAction("LoginPage", "Login");
+        }
+        JobApplicationViewModel jobApplication = _JobApplicationService.GetJobDetail(id);
+        if (jobApplication == null)
+        {
+            TempData["ErrorMessage"] = "Something Went Wrong";
+            return RedirectToAction("GetJobApplicationList", new { JobId = jobApplication.JobId });
+        }
+        return View(jobApplication);
+    }
+    #endregion
+
+    #region  UpdateJobApplication
+    [Authorize(Roles = "Admin")]
+    [HttpPost]
+    public async Task<IActionResult> UpdateJobApplicationForJob(JobApplicationViewModel jobApplicationViewModel)
+    {
+        if (Request.Cookies["AuthToken"] == null)
+        {
+            Response.Cookies.Delete("Remember");
+            return RedirectToAction("LoginPage", "Login");
+        }
+        bool updateJobApplication = await _JobApplicationService.UpdateJobApplication(jobApplicationViewModel);
+        if (updateJobApplication == false)
+        {
+            TempData["ErrorMessage"] = "Something Went Wrong";
+            return RedirectToAction("GetJobApplicationListByJobId", new { JobId = jobApplicationViewModel.JobId });
+        }
+        else
+        {
+            TempData["SuccessMessage"] = "Job Application Updated Successfully";
+            return RedirectToAction("GetJobApplicationListByJobId", new { JobId = jobApplicationViewModel.JobId });
+        }
+    }
+    #endregion
+
+    #region DeleteJobApplication
+    public async Task<IActionResult> DeleteJobApplicationforJob(int AppId)
+    {
+        if (AppId == 0)
+        {
+            TempData["ErrorMessage"] = "Something Went wrong";
+            return RedirectToAction("GetJobApplicationList");
+        }
+        else
+        {
+            int jobId = _JobApplicationService.getJobIdByAppId(AppId);
+            bool jobApplicationDeleteStatus = await _JobApplicationService.DeleteJobApplication(AppId);
+            if (jobApplicationDeleteStatus)
+            {
+                TempData["SuccessmMessage"] = "Job Application deleted successfully";
+                return RedirectToAction("GetJobApplicationListByJobId" , new { JobId = jobId } );
+            }
+            else
+            {
+                TempData["ErrorMessage"] = "Something went wrong";
+                return RedirectToAction("GetJobApplicationListByJobId" , new { JobId = jobId });
+            }
+        }
+    }
+    #endregion
+
+
+
 }

@@ -6,12 +6,9 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <div class="text-center">
-    <div class="fs-2 fw-bold mt-3">Job Applications @if(Model.Count() != 0 || Model != null){
-        <span>for @Model[0].JobName </span>
-                }
-    </div>
+    <div class="fs-2 fw-bold mt-3">Job Applications</div>
 </div>
-<a asp-action="Index" asp-controller="Home" class="btn border mt-3 text-end btn-primary">Back</a>
+<a asp-action="Index" asp-controller="Home" class="btn border mt-3 btn-primary">Back</a>
 <div class="table-responsive mt-3">
     <table class="table display">
         <thead>
@@ -28,7 +25,7 @@
             @if (Model.Count() == 0 || Model == null)
             {
                 <tr>
-                    <td colspan="7" class="text-center text-nowrap">
+                    <td colspan="7" class="text-center">
                         <div>No Applications Found</div>
                     </td>
                 </tr>
@@ -44,6 +41,7 @@
                         <td class="text-nowrap">@jobapp.JobName</td>
                         <td class="text-nowrap">@jobapp.CompanyName</td>
                         <td class="text-nowrap">@jobapp.Location</td>
+                        @*  class="text-nowrap"<td>@jobapp.Resume</td> *@
                         <td class="text-nowrap">@jobapp.status</td>
                         <td class="text-nowrap">
                             <a asp-action="UpdateJobApplication" asp-controller="JobApplication"
@@ -57,3 +55,7 @@
         </tbody>
     </table>
 </div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
