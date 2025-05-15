@@ -194,7 +194,7 @@ public class JobApplicationController : Controller
         }
     }
     #endregion
- 
+
     #region UpdateJobApplication
     [Authorize(Roles = "Admin")]
     public IActionResult UpdateJobApplicationForJob(int id)
@@ -244,7 +244,7 @@ public class JobApplicationController : Controller
         if (AppId == 0)
         {
             TempData["ErrorMessage"] = "Something Went wrong";
-            return RedirectToAction("Index","Home");
+            return RedirectToAction("Index", "Home");
         }
         else
         {
@@ -253,12 +253,12 @@ public class JobApplicationController : Controller
             if (jobApplicationDeleteStatus)
             {
                 TempData["SuccessmMessage"] = "Job Application deleted successfully";
-                return RedirectToAction("GetJobApplicationsByJobId" , new { JobId = jobId } );
+                return RedirectToAction("GetJobApplicationsByJobId", new { JobId = jobId });
             }
             else
             {
                 TempData["ErrorMessage"] = "Something went wrong";
-                return RedirectToAction("GetJobApplicationsByJobId" , new { JobId = jobId });
+                return RedirectToAction("GetJobApplicationsByJobId", new { JobId = jobId });
             }
         }
     }

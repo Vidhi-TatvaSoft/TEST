@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\TEST\\Test\\Test.csproj": {}
+    "d:\\TEST\\Test\\Test.csproj": {}
   },
   "projects": {
-    "D:\\TEST\\BLL\\BLL.csproj": {
+    "d:\\TEST\\BLL\\BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TEST\\BLL\\BLL.csproj",
+        "projectUniqueName": "d:\\TEST\\BLL\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "D:\\TEST\\BLL\\BLL.csproj",
+        "projectPath": "d:\\TEST\\BLL\\BLL.csproj",
         "packagesPath": "C:\\Users\\pca42\\.nuget\\packages\\",
-        "outputPath": "D:\\TEST\\BLL\\obj\\",
+        "outputPath": "d:\\TEST\\BLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pca42\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,8 +26,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\TEST\\DAL\\DAL.csproj": {
-                "projectPath": "D:\\TEST\\DAL\\DAL.csproj"
+              "d:\\TEST\\DAL\\DAL.csproj": {
+                "projectPath": "d:\\TEST\\DAL\\DAL.csproj"
               }
             }
           }
@@ -95,14 +95,14 @@
         }
       }
     },
-    "D:\\TEST\\DAL\\DAL.csproj": {
+    "d:\\TEST\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TEST\\DAL\\DAL.csproj",
+        "projectUniqueName": "d:\\TEST\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "D:\\TEST\\DAL\\DAL.csproj",
+        "projectPath": "d:\\TEST\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\pca42\\.nuget\\packages\\",
-        "outputPath": "D:\\TEST\\DAL\\obj\\",
+        "outputPath": "d:\\TEST\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pca42\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -182,14 +182,14 @@
         }
       }
     },
-    "D:\\TEST\\Test\\Test.csproj": {
+    "d:\\TEST\\Test\\Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TEST\\Test\\Test.csproj",
+        "projectUniqueName": "d:\\TEST\\Test\\Test.csproj",
         "projectName": "Test",
-        "projectPath": "D:\\TEST\\Test\\Test.csproj",
+        "projectPath": "d:\\TEST\\Test\\Test.csproj",
         "packagesPath": "C:\\Users\\pca42\\.nuget\\packages\\",
-        "outputPath": "D:\\TEST\\Test\\obj\\",
+        "outputPath": "d:\\TEST\\Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pca42\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -204,8 +204,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\TEST\\BLL\\BLL.csproj": {
-                "projectPath": "D:\\TEST\\BLL\\BLL.csproj"
+              "d:\\TEST\\BLL\\BLL.csproj": {
+                "projectPath": "d:\\TEST\\BLL\\BLL.csproj"
               }
             }
           }

@@ -33,7 +33,7 @@ public class HomeService : IHomeService
                 }).OrderBy(x => x.JobId).ToList();
                 return jobs;
             }else{
-                return  _context.Jobs.Include(x => x.JobApplications).Where(j => !j.IsDelete)
+                return  _context.Jobs.Include(x => x.JobApplications).Where(j => !j.IsDelete )
             .Select(j => new JobViewModel{
                 JobId = j.JobId,
                 JobName = j.JobName,
