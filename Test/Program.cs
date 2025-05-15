@@ -17,6 +17,9 @@ builder.Services.AddDbContext<TestDatabaseContext>(options =>
 
 builder.Services.AddScoped<ILoginService,LoginService>();
 builder.Services.AddScoped<IJWTTokenService, JWTTokenService>();
+builder.Services.AddScoped<IAdminService, AdminService>();
+builder.Services.AddScoped<IHomeService, HomeService>();
+builder.Services.AddScoped<IJobApplicationService, JobApplicationService>();
 
 builder.Services.AddAuthentication(x=>{
     x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;

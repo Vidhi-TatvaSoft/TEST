@@ -45,4 +45,34 @@ public class LoginService : ILoginService
             return null!;
         }
     }
+
+    public bool SaveUser(RegistrationViewModel registrationViewModel)
+    {
+        try
+        {
+            var user = _context.Users.FirstOrDefault(u => u.Email.ToLower().Trim() == registrationViewModel.Email.ToLower().Trim());
+            if (user != null)
+            {
+                return false;
+            }
+            else
+            {
+                Users newUser = new Users()
+                {
+                    Name = registrationViewModel.Name,
+                    Email = registrationViewModel.Email,
+                    password = registrationViewModel.Password,
+                    RoleId = 2
+                };
+                _context.Users.Add(newUser);
+                _context.SaveChanges();
+                return true;
+            }
+        }
+        catch (Exception e)
+        {
+            return false;
+        }
+    }
+
 }

@@ -1,0 +1,47 @@
+@using DAL.ViewModels;
+@model RegistrationViewModel;
+
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+
+<div class="p-3 d-flex  align-items-center justify-content-center border" style="box-shadow: 1px 1px 15px 3px #888888;">
+    <div class="row">
+        <div class="fs-2 fw-bold text-primary mb-3">Registration Page</div>
+        
+        <form asp-action="Registration" asp-controller="Login">
+            <div class="name-div mt-2 ">
+                <input asp-for="Name" id="Name" type="text" class=" form-control " placeholder="Name*" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <div class="username-div mt-4 ">
+                <input asp-for="Email" id="email" type="email" class=" form-control " placeholder="Email*" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="password-div mt-4 position-relative">
+                <input type="password" asp-for="Password" class="inputText-login d-inline  form-control" id="password"
+                    placeholder="Password*" />
+                <span><i class="bi bi-eye-slash-fill password-icon-login" id="togglepassword"
+                        onclick="toggle_fnction('togglepassword','password')"></i></span>
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            
+
+            <div class="text-danger fs-5">@ViewData["RegisterMessage"]</div>
+            <div class="mt-4 w-100">
+                <input type="submit" value="Register"
+                    class="btn btn-danger login-btn-btn bg-primary border-primary form-control">
+
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

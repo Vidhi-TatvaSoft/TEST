@@ -28,6 +28,35 @@ public class LoginController : Controller
         return View();
     }
 
+    public IActionResult Registration(){
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult Registration(RegistrationViewModel registrationViewModel)
+    {
+        if (registrationViewModel.Email == null || registrationViewModel.Password == null)
+        {
+            ViewData["RegisterMessage"] = "Enter Valid Credentials";
+            return View();
+        }
+        else
+        {
+            bool saveUser = _loginService.SaveUser(registrationViewModel);
+            if (saveUser == false)
+            {
+                ViewData["RegisterMessage"] = "Email Already Exists";
+                return View();
+            }
+            else
+            {
+                TempData["SuccessMessage"] = "Registration Successful";
+                return RedirectToAction("LoginPage");
+            }
+           
+        }
+    }
+
     [HttpPost]
     public IActionResult LoginPage(LoginViwModel loginViwModel)
     {

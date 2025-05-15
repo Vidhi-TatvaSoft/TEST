@@ -8,6 +8,9 @@ public class TestDatabaseContext : DbContext
 
     public DbSet<Roles> Roles { get; set; }
 
+    public DbSet<Jobs> Jobs { get; set; }
+    public DbSet<JobApplication> JobApplications { get; set; }
+
     public TestDatabaseContext(DbContextOptions<TestDatabaseContext> options) : base(options) { }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

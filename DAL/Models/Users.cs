@@ -14,7 +14,6 @@ public class Users
     public string password {get ; set; } = null!;
 
     
-
     [ForeignKey("Roles")]
     public long RoleId { get ; set ; }
     public Roles Roles {get ; set;} 

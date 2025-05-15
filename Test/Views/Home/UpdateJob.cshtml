@@ -1,0 +1,62 @@
+@using DAL.ViewModels;
+@model JobViewModel;
+
+@{
+    ViewData["Title"] = "Update Job";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="d-flex justify-content-center">
+    <div class=" row">
+        <div class="fs-3 text-dark fw-bold">Update Job</div>
+
+        <form asp-action="UpdateJob" asp-controller="Home" class=" row">
+            <div class=" mt-2 ">
+                <input type="hidden" asp-for="JobId" id="jobid" value="@Model.JobId">
+                <label for="JobName">Job Name*</label>
+                <input asp-for="JobName" id="JobName" type="text" class=" form-control " placeholder="Job Name*" />
+                <span asp-validation-for="JobName" class="text-danger"></span>
+            </div>
+            <div class=" mt-2 ">
+                <label for="JobDescription">Job Description*</label>
+                <input asp-for="JobDescription" id="JobDescription" type="text" class=" form-control "
+                    placeholder="Job Description*" />
+                <span asp-validation-for="JobDescription" class="text-danger"></span>
+            </div>
+            <div class=" mt-2 ">
+                <label for="CompanyName">Company Name*</label>
+                <input asp-for="CompanyName" id="CompanyName" type="text" class=" form-control "
+                    placeholder="Company Name*" />
+                <span asp-validation-for="CompanyName" class="text-danger"></span>
+            </div>
+            <div class=" mt-2 ">
+                <label for="Location">Location*</label>
+                <input asp-for="Location" id="Location" type="text" class=" form-control " placeholder="Location*" />
+                <span asp-validation-for="Location" class="text-danger"></span>
+            </div>
+
+            <div class=" mt-2 ">
+                <label for="NoOfAplicants">Total Aplicants*</label>
+                <input asp-for="NoOfAplicants" id="NoOfAplicants" type="text" class=" form-control "
+                    placeholder="Total Aplicants*" disabled />
+                <span asp-validation-for="NoOfAplicants" class="text-danger"></span>
+            </div>
+
+            <div class="mt-2 ">
+                <label for="floatingSelect text-secondary ">status</label>
+                <select asp-for="status" class="form-select" id="status" aria-label=" label select example">
+                    <option value="Available">Available</option>
+                    <option value="Interviewing">Interviewing</option>
+                    <option value="Offered">Offered</option>
+                    <option value="Rejected">Rejected</option>
+                </select>
+            </div>
+
+            @* <div class="text-danger fs-5">@ViewData["RegisterMessage"]</div> *@
+            <div class="mt-4 w-100">
+                <input type="submit" value="Update Job "
+                    class="btn btn-danger login-btn-btn bg-primary border-primary form-control">
+
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,14 +1,67 @@
-﻿@{
+﻿@using DAL.ViewModels;
+@model List<JobViewModel>
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    
+
 </div>
 
 <div>
-    <a asp-action="Dashboard" asp-controller="Home" class="btn border">Dashboard</a>
-    <a asp-action="Logout" asp-controller="Login" class=" btn border ">Logout</a>
+    <a asp-action="Dashboard" asp-controller="Home" class="btn border">Job Applications</a>
+    <div class="d-flex justify-content-end">
+        <a asp-action="AddJob" asp-controller="Home" class=" btn border me-2">Add Job</a>
+        <a asp-action="Logout" asp-controller="Login" class=" btn border ">Logout</a>
+    </div>
+
 </div>
 
+<div>
+    <table class="table display">
+        <thead>
+            <th>JobId</th>
+            <th>Job Name</th>
+            <th>Company</th>
+            <th>Location</th>
+            <th>Number Of Appliactions</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </thead>
+
+        <tbody>
+            @foreach (var job in Model)
+            {
+                <tr>
+                    <td>@job.JobId</td>
+                    <td><a asp-action="GetJobApplicationsByJobId" asp-controller="JobApplication"
+                            asp-route-JobId="@job.JobId">@job.JobName</a></td>
+                    <td>@job.CompanyName</td>
+                    <td>@job.Location</td>
+                    <td>@job.status</td>
+                    <td>@job.NoOfAplicants</td>
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <td>
+                            <a asp-action="UpdateJob" asp-controller="Home" asp-route-id="@job.JobId"><i
+                                    class="fa-solid fa-pen text-black me-3 mt-2"></i></a>
+                            <a asp-action="DeleteJob" asp-controller="Home" asp-route-id="@job.JobId"><i
+                                    class="fa-solid fa-trash-can text-black"></i></a>
+                        </td>
+                    }
+                    else
+                    {
+                        <td>
+                            <a asp-action="UpdateJob" asp-controller="Home" asp-route-id="@job.JobId">Apply</a>
+                            <a asp-action="DeleteJob" asp-controller="Home" asp-route-id="@job.JobId"><i
+                                    class="fa-solid fa-trash-can text-black"></i></a>
+                        </td>
+
+                    }
+
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

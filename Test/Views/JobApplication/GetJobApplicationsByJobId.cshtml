@@ -1,0 +1,40 @@
+@using DAL.ViewModels;
+@model List<JobApplicationViewModel>
+
+@{
+    ViewData["Title"] = "Job Applications";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="fs-2 fw-bold ">Job Applications</div>
+
+<div>
+    <table class="table display">
+        <thead>
+            <th> Id</th>
+            <th>User Name</th>
+            <th>Job Name</th>
+            <th>Resume</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </thead>
+
+        <tbody>
+            @foreach (var jobapp in Model)
+            {
+
+                <tr>
+                    <td>@jobapp.ApplicationId</td>
+                    <td>@jobapp.UserName</td>
+                    <td>@jobapp.JobName</td>
+                    <td>@jobapp.Resume</td>
+                    <td>@jobapp.status</td>
+                    <td>
+                        <a asp-action="UpdateJobApplication" asp-controller="Home" asp-route-id="@jobapp.ApplicationId"><i class="fa-solid fa-pen text-black me-3 mt-2" ></i></a>
+                        <a asp-action="DeleteJobApplication" asp-controller="Home" asp-route-id="@jobapp.ApplicationId"><i class="fa-solid fa-trash-can text-black"></i></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
