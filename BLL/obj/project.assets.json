@@ -7359,11 +7359,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\TEST\\BLL\\BLL.csproj",
+      "projectUniqueName": "D:\\TEST\\BLL\\BLL.csproj",
       "projectName": "BLL",
-      "projectPath": "d:\\TEST\\BLL\\BLL.csproj",
+      "projectPath": "D:\\TEST\\BLL\\BLL.csproj",
       "packagesPath": "C:\\Users\\pca42\\.nuget\\packages\\",
-      "outputPath": "d:\\TEST\\BLL\\obj\\",
+      "outputPath": "D:\\TEST\\BLL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pca42\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -7378,8 +7378,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "d:\\TEST\\DAL\\DAL.csproj": {
-              "projectPath": "d:\\TEST\\DAL\\DAL.csproj"
+            "D:\\TEST\\DAL\\DAL.csproj": {
+              "projectPath": "D:\\TEST\\DAL\\DAL.csproj"
             }
           }
         }

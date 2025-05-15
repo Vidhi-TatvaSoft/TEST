@@ -7382,11 +7382,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\TEST\\Test\\Test.csproj",
+      "projectUniqueName": "D:\\TEST\\Test\\Test.csproj",
       "projectName": "Test",
-      "projectPath": "d:\\TEST\\Test\\Test.csproj",
+      "projectPath": "D:\\TEST\\Test\\Test.csproj",
       "packagesPath": "C:\\Users\\pca42\\.nuget\\packages\\",
-      "outputPath": "d:\\TEST\\Test\\obj\\",
+      "outputPath": "D:\\TEST\\Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pca42\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -7401,8 +7401,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "d:\\TEST\\BLL\\BLL.csproj": {
-              "projectPath": "d:\\TEST\\BLL\\BLL.csproj"
+            "D:\\TEST\\BLL\\BLL.csproj": {
+              "projectPath": "D:\\TEST\\BLL\\BLL.csproj"
             }
           }
         }

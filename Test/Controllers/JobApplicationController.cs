@@ -171,6 +171,7 @@ public class JobApplicationController : Controller
     #endregion
 
     #region DeleteJobApplication
+        [Authorize(Roles = "Admin")]
     public async Task<IActionResult> DeleteJobApplication(int AppId)
     {
         if (AppId == 0)
@@ -239,6 +240,7 @@ public class JobApplicationController : Controller
     #endregion
 
     #region DeleteJobApplication
+        [Authorize(Roles = "Admin")]
     public async Task<IActionResult> DeleteJobApplicationforJob(int AppId)
     {
         if (AppId == 0)

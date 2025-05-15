@@ -1,292 +1,316 @@
 {
   "Files": [
     {
-      "Id": "d:\\TEST\\Test\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Test.bundle.scp.css",
+      "Id": "D:\\TEST\\Test\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Test.bundle.scp.css",
       "PackagePath": "staticwebassets\\Test.bundle.scp.css"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\css\\site.css",
+      "Id": "D:\\TEST\\Test\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\favicon.ico",
+      "Id": "D:\\TEST\\Test\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\js\\site.js",
+      "Id": "D:\\TEST\\Test\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "D:\\TEST\\Test\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\uploads\\07213d02-3d2d-4af4-8efe-0869147ed977_Project Prerequisites Document.pdf",
+      "Id": "D:\\TEST\\Test\\wwwroot\\uploads\\07213d02-3d2d-4af4-8efe-0869147ed977_Project Prerequisites Document.pdf",
       "PackagePath": "staticwebassets\\uploads\\07213d02-3d2d-4af4-8efe-0869147ed977_Project Prerequisites Document.pdf"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\uploads\\1780e228-866b-4392-b7fd-e5cb9dd7dc56_OrderInvoice (14).pdf",
+      "Id": "D:\\TEST\\Test\\wwwroot\\uploads\\1780e228-866b-4392-b7fd-e5cb9dd7dc56_OrderInvoice (14).pdf",
       "PackagePath": "staticwebassets\\uploads\\1780e228-866b-4392-b7fd-e5cb9dd7dc56_OrderInvoice (14).pdf"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\uploads\\21bdc47d-f10b-4861-ae5c-99ea7aad0430_OrderInvoice (11).pdf",
+      "Id": "D:\\TEST\\Test\\wwwroot\\uploads\\21bdc47d-f10b-4861-ae5c-99ea7aad0430_OrderInvoice (11).pdf",
       "PackagePath": "staticwebassets\\uploads\\21bdc47d-f10b-4861-ae5c-99ea7aad0430_OrderInvoice (11).pdf"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\uploads\\6125bcaa-6532-4b9f-8a1f-9efafa16bd3d_OrderInvoice (15).pdf",
+      "Id": "D:\\TEST\\Test\\wwwroot\\uploads\\3d3e502a-bf24-4abb-91d3-f45fb99c62df_OrderInvoice (13).pdf",
+      "PackagePath": "staticwebassets\\uploads\\3d3e502a-bf24-4abb-91d3-f45fb99c62df_OrderInvoice (13).pdf"
+    },
+    {
+      "Id": "D:\\TEST\\Test\\wwwroot\\uploads\\43bed71e-ed61-489f-9678-0d34f80b5cfa_OrderInvoice (14).pdf",
+      "PackagePath": "staticwebassets\\uploads\\43bed71e-ed61-489f-9678-0d34f80b5cfa_OrderInvoice (14).pdf"
+    },
+    {
+      "Id": "D:\\TEST\\Test\\wwwroot\\uploads\\6125bcaa-6532-4b9f-8a1f-9efafa16bd3d_OrderInvoice (15).pdf",
       "PackagePath": "staticwebassets\\uploads\\6125bcaa-6532-4b9f-8a1f-9efafa16bd3d_OrderInvoice (15).pdf"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\uploads\\6a2bf0e2-358b-4a05-996b-795880c4b847_OrderInvoice (13).pdf",
+      "Id": "D:\\TEST\\Test\\wwwroot\\uploads\\6a2bf0e2-358b-4a05-996b-795880c4b847_OrderInvoice (13).pdf",
       "PackagePath": "staticwebassets\\uploads\\6a2bf0e2-358b-4a05-996b-795880c4b847_OrderInvoice (13).pdf"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\uploads\\6d5d31c5-a7cc-4c3d-a5e7-39edbbc10e65_OrderInvoice (13).pdf",
+      "Id": "D:\\TEST\\Test\\wwwroot\\uploads\\6af62838-4aa1-416f-a046-9d6db0fd2458_Project Prerequisites Document.pdf",
+      "PackagePath": "staticwebassets\\uploads\\6af62838-4aa1-416f-a046-9d6db0fd2458_Project Prerequisites Document.pdf"
+    },
+    {
+      "Id": "D:\\TEST\\Test\\wwwroot\\uploads\\6d5d31c5-a7cc-4c3d-a5e7-39edbbc10e65_OrderInvoice (13).pdf",
       "PackagePath": "staticwebassets\\uploads\\6d5d31c5-a7cc-4c3d-a5e7-39edbbc10e65_OrderInvoice (13).pdf"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\uploads\\959fc3ba-b4a5-433e-a8dc-521c18085ad2_OrderInvoice (14).pdf",
+      "Id": "D:\\TEST\\Test\\wwwroot\\uploads\\8720934f-8029-410d-8e78-0ee7f1c4d704_OrderInvoice (13).pdf",
+      "PackagePath": "staticwebassets\\uploads\\8720934f-8029-410d-8e78-0ee7f1c4d704_OrderInvoice (13).pdf"
+    },
+    {
+      "Id": "D:\\TEST\\Test\\wwwroot\\uploads\\959fc3ba-b4a5-433e-a8dc-521c18085ad2_OrderInvoice (14).pdf",
       "PackagePath": "staticwebassets\\uploads\\959fc3ba-b4a5-433e-a8dc-521c18085ad2_OrderInvoice (14).pdf"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\uploads\\a186c3f4-9f19-4166-93cc-bcd3dfaf4020_OrderInvoice (13).pdf",
+      "Id": "D:\\TEST\\Test\\wwwroot\\uploads\\a186c3f4-9f19-4166-93cc-bcd3dfaf4020_OrderInvoice (13).pdf",
       "PackagePath": "staticwebassets\\uploads\\a186c3f4-9f19-4166-93cc-bcd3dfaf4020_OrderInvoice (13).pdf"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\uploads\\bc9bc71c-df45-495d-b52f-26d92a9263ec_OrderInvoice (13).pdf",
+      "Id": "D:\\TEST\\Test\\wwwroot\\uploads\\b54d802c-f68a-44e8-80d9-b8594bef536f_OrderInvoice (13).pdf",
+      "PackagePath": "staticwebassets\\uploads\\b54d802c-f68a-44e8-80d9-b8594bef536f_OrderInvoice (13).pdf"
+    },
+    {
+      "Id": "D:\\TEST\\Test\\wwwroot\\uploads\\bc9bc71c-df45-495d-b52f-26d92a9263ec_OrderInvoice (13).pdf",
       "PackagePath": "staticwebassets\\uploads\\bc9bc71c-df45-495d-b52f-26d92a9263ec_OrderInvoice (13).pdf"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\uploads\\c2158c70-2d2c-4ef4-8471-6db49aad804d_OrderInvoice (15).pdf",
+      "Id": "D:\\TEST\\Test\\wwwroot\\uploads\\c2158c70-2d2c-4ef4-8471-6db49aad804d_OrderInvoice (15).pdf",
       "PackagePath": "staticwebassets\\uploads\\c2158c70-2d2c-4ef4-8471-6db49aad804d_OrderInvoice (15).pdf"
     },
     {
-      "Id": "d:\\TEST\\Test\\wwwroot\\uploads\\cd00f37d-bdb7-44f4-90f5-0bb4c3c6b027_OrderInvoice (13).pdf",
+      "Id": "D:\\TEST\\Test\\wwwroot\\uploads\\cd00f37d-bdb7-44f4-90f5-0bb4c3c6b027_OrderInvoice (13).pdf",
       "PackagePath": "staticwebassets\\uploads\\cd00f37d-bdb7-44f4-90f5-0bb4c3c6b027_OrderInvoice (13).pdf"
+    },
+    {
+      "Id": "D:\\TEST\\Test\\wwwroot\\uploads\\eca74919-7366-4019-bafc-f161b4129d10_Project Prerequisites Document.pdf",
+      "PackagePath": "staticwebassets\\uploads\\eca74919-7366-4019-bafc-f161b4129d10_Project Prerequisites Document.pdf"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Test.Microsoft.AspNetCore.StaticWebAssets.props",
